@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(img/pizza-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+nav .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+nav .links {
+    flex: 1;
+    text-align: right;
+}
+
+.links i {
+    display: none;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 20px
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.links ul li a:hover {
+    border-bottom: 2px solid rgb(248, 158, 39);
+}
+
+.text-box {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 15%;
+}
+
+.text-box h1 {
+    font-size: 60px;
+    letter-spacing: 20px;
+    color: #fff
+}
+
+.text-box i {
+    font-size: 30px;
+    margin-top: 22%;
+    color: #fff;
+    border: 2px solid#fff;
+    border-radius: 50%;
+    padding: 8px 14px
+}
+
+.text-box i:hover {
+    background-color: rgb(235, 146, 45);
+    transition: .5s;
+}
+
+@media (max-width: 768px) {
+    nav .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .links ul li {
+        display: block
+    }
+    .links {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        background-color: rgb(235, 146, 45);
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+        transition: .5s
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .text-box {
+        display: none;
+    }
+}
+
+
+/* *****************ehda************* */
+
+#ehda-pattern {
+    background-image: url(img/pattern.jpg);
+}
+
+.ehda {
+    width: 92%;
+    text-align: right;
+    padding: 5% 0;
+}
+
+.ehda h1 {
+    font-size: 45px;
+}
+
+
+/* .ehda h1::after {
+            content: '';
+            width: 5%;
+            height: 3px;
+            background-color: rgb(235, 146, 45);
+            display: block;
+            float: right;
+            /* margin: 80px 0; */
+
+
+/* } */
+
+.ehda p {
+    line-height: 50px;
+    padding-top: 20px;
+    font-size: 23px;
+    padding-left: 3%;
+    color: rgb(105, 103, 103);
+}
+
+@media(max-width:767px) {
+    .ehda h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .ehda p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+
+/* *****************menu************* */
+
+.menu {
+    width: 100%;
+    margin-bottom: 2%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(img/menu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu h2,
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 5%;
+}
+
+
+/* .menu h2::after {
+        content: '';
+        width: 5%;
+        height: 3px;
+        background-color: rgb(235, 146, 45);
+        display: block;
+        float: right;
+} */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.menu-col {
+    flex-basis: 31%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-col img {
+    display: block;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    height: 200px
+}
+
+
+/* .menu-col img:hover {
+background-color: rgb(110, 107, 107);
+z-index: 2;
+} */
+
+@media(max-width:767px) {
+    .menu h2,
+    h3 {
+        font-size: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* ********************************why-pelak***************** */
+
+.why-pelak {
+    width: 92%;
+    text-align: right;
+    margin: 5% 0;
+}
+
+.why-pelak h1 {
+    font-size: 45px;
+}
+
+
+/* .why-pelak h1::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: rgb(235, 146, 45);
+    display: block;
+    float: right;
+} */
+
+.why-pelak p {
+    line-height: 50px;
+    padding-top: 20px;
+    padding-left: 3%;
+    color: rgb(105, 103, 103);
+}
+
+@media(max-width:768px) {
+    .why-pelak h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .why-pelak p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+
+/* ********************************branch***************** */
+
+.branch {
+    width: 100%;
+    height: 350px;
+    margin: 5% 0;
+    background-image: linear-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url(img/sandwich.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.branch h1,
+h3 {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 40px
+}
+
+
+/* .branch h1::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: rgb(235, 146, 45);
+    display: block;
+    float: right;
+} */
+
+.branch-col {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.location {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 7px;
+    background-color: rgb(202, 24, 24);
+}
+
+.location h2 {
+    text-align: center;
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .branch {
+        height: 700px;
+    }
+    .branch h1,
+    h3 {
+        font-size: 30px
+    }
+    .location {
+        width: 40%;
+    }
+}
+
+
+/* *************************about-pelak*************************** */
+
+.about-pelak {
+    width: 92%;
+    text-align: right;
+    margin: 5% 0;
+}
+
+.about-pelak h1 {
+    font-size: 45px;
+}
+
+
+/* .about-pelak h1::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: rgb(235, 146, 45);
+    display: block;
+    float: right;
+} */
+
+.about-pelak p {
+    line-height: 50px;
+    padding-top: 20px;
+    padding-left: 3%;
+    color: rgb(105, 103, 103);
+}
+
+@media(max-width:768px) {
+    .about-pelak h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .about-pelak p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+
+/* *************************contact*************************** */
+
+.contact {
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url(img/fruits.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* .contact h2::after {
+    content: '';
+    width: 5%;
+    height: 3px;
+    background-color: rgb(235, 146, 45);
+    display: block;
+    float: right;
+} */
+
+.contact .form {
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+form {
+    text-align: center;
+    padding-top: 50px;
+}
+
+form input {
+    width: 25%;
+    padding: 10px 20px;
+    text-align: right;
+    border-radius: 10px;
+}
+
+textarea {
+    margin-top: 1%;
+    width: 25%;
+    padding: 30px 195px;
+    border-radius: 10px;
+}
+
+@media(max-width:768px) {
+    .contact h2 {
+        font-size: 35px;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    form input {
+        width: 90%;
+        padding: 10px 20px;
+        margin: 10px 0;
+        text-align: right;
+        border-radius: 10px;
+    }
+    textarea {
+        margin-top: 3%;
+        width: 15%;
+        padding: 30px 150px;
+    }
+}
+
+
+/* *************************footer*************************** */
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(116, 109, 109)
+}
+
+.footer-col {
+    flex-basis: 35%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 4%;
+}
+
+.footer-col p {
+    color: rgb(235, 146, 45);
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20%;
+}
+
+.icons {
+    margin-left: 20%;
+}
+
+.icons i {
+    border: 1px solid rgb(44, 42, 42);
+    border-radius: 50%;
+    padding: 7px 10px;
+    margin-left: 5%;
+    color: rgb(44, 42, 42)
+}
+
+.icons i:hover {
+    background-color: rgb(235, 146, 45);
+    color: #fff;
+    border: 1px solid rgb(235, 146, 45);
+    transition: .5s;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .footer-col p {
+        font-size: 18px;
+        padding-right: 6%;
+        text-align: center;
+    }
+}
